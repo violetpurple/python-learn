@@ -4,9 +4,9 @@
 计算机根据人猜的数字分别给出提示大一点/小一点/猜对了
 '''
 
-import randint from random
+from random import randint
 
-answer = randint.randint(1, 100)
+answer = randint(1, 100)
 count = 0
 
 while True:
@@ -14,7 +14,7 @@ while True:
     number = int(input("请输入你的数字："))
     if number > answer:
         print("数字大了")
-    elif number < answer
+    elif number < answer:
         print("数字小了")
     else:
         print("答对了")
